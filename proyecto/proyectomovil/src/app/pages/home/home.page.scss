@@ -1,0 +1,31 @@
+
+#container a {
+  text-decoration: none;
+}
+.fondo{
+ --background:black ;
+} 
+.text{
+  color: #a17d11;
+  width: 350px;
+  margin-left: 10px;
+  margin-top: 25%;
+  
+}
+.imagen{
+  margin-top: 10px;
+  width: 400px;
+  height: 400px;
+  border-radius: 150px;
+  margin: auto;
+  
+  background: url('./../../../assets/icono/icon.png.png') 0/100% 100%;
+ 
+}
+.boton{
+  margin-top:10px;
+
+  
+ 
+  
+}

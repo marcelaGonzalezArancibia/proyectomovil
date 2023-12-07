@@ -1,0 +1,49 @@
+.fondo{
+    --background: url('./../../../assets/img/img4.png') 0/100% 100%;
+    opacity: 0.9;
+}
+.fondoo{
+    
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    margin-top: 30px;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+    
+.btn{
+   
+    width: 350px;
+    margin: auto;
+    opacity: 10;
+    padding-top: 30px;
+}
+.linea {
+    border-top: 1px solid rgb(113, 112, 112);
+    height: 2px;
+    max-width: 600px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+  }
+.icon{
+    margin-left: 10px;
+}
+.buton{
+    margin-left: 280px;
+    
+}
+.escaner{
+    background-color: aliceblue;
+    margin-top: 100px;
+    margin-left: 20px;
+    border-radius: 5px;
+    width: 250px;
+}
+.text1{
+    margin-top: 40px;
+    font-family: "Georgia";
+    text-align: center;
+    color: aliceblue;
+}

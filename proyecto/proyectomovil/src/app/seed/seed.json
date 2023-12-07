@@ -1,0 +1,35 @@
+{
+  "asistenciaInicia1": [
+    {
+      "nombre_curso": "lenguaje",
+      "porcentaje": 40,
+      "estado": "reprobado"
+    }
+
+  ],
+
+  "asistenciaInicia2":[
+    {
+      "numero":1,
+      "nombre": "fernando godoy",
+      "porcentaje": 35,
+      "estado":"reprobado"
+    },
+    {
+      "numero":2,
+      "nombre": "patricio gonzalez",
+      "porcentaje": 65,
+      "estado":"aprobado"
+      
+    },
+    {
+      "numero":3,
+      "nombre": "marisol arancibia",
+      "porcentaje": 80,
+      "estado":"aprobado"
+      
+    }
+  ]
+   
+  
+}

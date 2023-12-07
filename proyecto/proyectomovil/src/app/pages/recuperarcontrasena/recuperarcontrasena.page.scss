@@ -1,0 +1,44 @@
+.fondo{
+    --background: url('./../../../assets/img/img4.png') 0/100% 100%;
+}
+
+.login-section{
+    background:white;
+    height: 55vh;
+    width: 100%;
+    max-width: 500px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    margin: auto;
+    border-top-left-radius: 46px;
+    border-top-right-radius: 46px;
+}
+
+.text2{
+    color: rgba(0,0,0,.7);
+    width: 350px;
+    margin-left: 20px;
+    margin-top: 30px;
+    
+}
+.textos_login{
+    margin-top: center;
+    width: 350px;
+    
+}
+
+.icon{
+    height:20px;
+    width:20px;
+}
+.boton_login{
+   
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    
+
+
+}

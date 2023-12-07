@@ -1,0 +1,9 @@
+{
+  "name": "proyectomovil",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    }
+  },
+  "type": "angular"
+}

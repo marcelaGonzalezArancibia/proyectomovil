@@ -1,0 +1,52 @@
+<ion-content [fullscreen]="true" class="fondo">
+  
+  <div class="login-section">
+
+    
+
+    <div class="text2">
+      <p>ingrese sus nuevas contraseñas para recuperar su cuenta</p>
+    </div>
+
+    <ion-list class="textos_login">
+
+      <ion-item>
+        <div class="icon">
+          <ion-icon name="lock-open-outline"></ion-icon>
+        </div>
+
+        <ion-input 
+          label="ingrese password" 
+          labelPlacement="floating" 
+          type="password" 
+          placeholder="password..."
+          [(ngModel)]="password1"
+         
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <div class="icon">
+          <ion-icon name="lock-open-outline"></ion-icon>
+        </div>
+
+        <ion-input 
+          label="ingrese password" 
+          labelPlacement="floating" 
+          type="password" 
+          placeholder="password..."
+          [(ngModel)]="password2"
+         
+        ></ion-input>
+      </ion-item>
+  
+    </ion-list>
+   
+
+    <div ><ion-button color="dark" expand="block"  class="boton_login" (click)="enviarFormulario()" >enviar</ion-button></div>
+
+    
+  </div>
+  
+</ion-content>
+

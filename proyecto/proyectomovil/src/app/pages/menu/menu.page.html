@@ -1,0 +1,113 @@
+<ion-content [fullscreen]="true">
+  <ion-app>
+     <ion-menu contentId="main-content">
+       <ion-header>
+         <ion-toolbar color="dark">
+           <ion-title>Menu Content</ion-title>
+         </ion-toolbar>
+       </ion-header>
+       <ion-content class="ion-padding">
+ 
+
+         <ion-button fill="outline" color="dark"(click)="home()" >cerrar sesion</ion-button>
+         
+       </ion-content>
+     </ion-menu>
+     <div class="ion-page" id="main-content">
+       <ion-header>
+         <ion-toolbar>
+           <ion-buttons slot="start">
+             
+             <ion-buttons slot="start" >
+               <ion-back-button class="btn-atras" color="dark" default-href="#" (click)="home()" ></ion-back-button>
+             </ion-buttons>
+
+             <ion-menu-button class="buton" color="dark"></ion-menu-button>
+           </ion-buttons>
+           <ion-title></ion-title>
+         </ion-toolbar>
+       </ion-header>
+ 
+       <ion-content class="fondo"> 
+         
+           <div class="fondoo" >
+           <br>
+           <ul class="list-group"  *ngIf="alumno  as alumnoData">
+            <h1 class="text1"  *ngIf="mostrarTexto">bienvenido(a)! {{ alumnoData.nombre }} {{ alumnoData.apellido }}</h1>
+          </ul>
+
+
+           <div class="linea"></div>
+           
+           <ion-button class="btn" fill="outline" expand="block" color="light" (click)="cursos()" >CURSOS <ion-icon name="documents-outline" class="icon"></ion-icon></ion-button>
+           <div class="linea"></div>
+           <ion-button class="btn" fill="outline" expand="block" color="light"(click)="credencial()" >INFORMACION PERSONAL <ion-icon name="person-outline" class="icon"></ion-icon></ion-button>
+            <br>
+           <div class="linea"></div>
+            <div class="escaner">
+            <p>Porfavor presiona el boton "camara QR" para escanear el codigo y registar tu asistencia <ion-icon name="arrow-down-circle-outline"></ion-icon></p>
+            </div>
+           <ion-button class="btn" fill="outline" expand="block" color="light" (click)="escaner()"> CAMARA QR <ion-icon name="camera-outline" class="icon"></ion-icon></ion-button>
+          <ng-container *ngFor="let barcode of barcodes">
+            <ion-card>
+              <ion-card-content>
+                <ion-item>
+                  <ion-label position="fixed">Bytes</ion-label>
+                  <ion-input
+                    type="text"
+                    readonly
+                    [value]="barcode.bytes?.toString() || ''"
+                  ></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="fixed">Corner Points</ion-label>
+                  <ion-input
+                    type="text"
+                    readonly
+                    [value]="barcode.cornerPoints?.toString() || ''"
+                  ></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="fixed">Display Value</ion-label>
+                  <ion-input
+                    type="text"
+                    readonly
+                    [value]="barcode.displayValue"
+                  ></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="fixed">Format</ion-label>
+                  <ion-input type="text" readonly [value]="barcode.format"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="fixed">Raw Value</ion-label>
+                  <ion-input
+                    type="text"
+                    readonly
+                    [value]="barcode.rawValue"
+                  ></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="fixed">Value Type</ion-label>
+                  <ion-input
+                    type="text"
+                    readonly
+                    [value]="barcode.valueType"
+                  ></ion-input>
+                </ion-item>
+              </ion-card-content>
+            </ion-card>
+          </ng-container>
+       
+           <div class="linea"></div> 
+ 
+           </div>
+         
+       </ion-content>
+     </div>
+   </ion-app>
+ </ion-content>
+ 
+ <ion-footer>
+   <app-pie></app-pie>
+ </ion-footer>

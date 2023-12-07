@@ -1,0 +1,57 @@
+<ion-content [fullscreen]="true">
+  <ion-app>
+     <ion-menu contentId="main-content">
+       <ion-header>
+         <ion-toolbar color="dark">
+           <ion-title>Menu</ion-title>
+         </ion-toolbar>
+       </ion-header>
+       <ion-content class="ion-padding" >
+ 
+       
+         <ion-button fill="outline" color="dark" (click)="home()">cerrar sesion</ion-button>
+         
+       </ion-content>
+     </ion-menu>
+     <div class="ion-page" id="main-content">
+       <ion-header>
+         <ion-toolbar>
+           <ion-buttons slot="start">
+             
+             <ion-buttons slot="start" >
+               <ion-back-button class="btn-atras" color="dark" default-href="#" (click)="menu()"></ion-back-button>
+             </ion-buttons>
+ 
+             <ion-menu-button class="buton" color="dark"></ion-menu-button>
+           </ion-buttons>
+           <ion-title></ion-title>
+         </ion-toolbar>
+       </ion-header>
+ 
+
+
+      <ion-content class="fondo"> 
+         <!-- <ion-button (click)="scan()">Scanner</ion-button>-->
+          <!--<ion-button (click)="installGoogleBarcodeScannerModule()">Instalar Google Barcode Scanner</ion-button>-->
+          <!--<ion-button id="presente" (click)= "guarddar()" disabled=true>Presente</ion-button>-->
+      </ion-content>
+
+      <ion-content class="ion-padding">
+      <!--<ion-button (click)="scan()">Escanear QR</ion-button>-->
+      <button type="button" class="btn active" data-bs-toggle="button" aria-pressed="true" (click)="scan()">Escanear QR</button>
+
+  <!-- Mostrar los datos escaneados en la página -->
+      <div *ngIf="scannedData">
+    <p>Datos escaneados: {{ scannedData }}</p>
+   <!-- <p> prueba {{prueba}} </p>-->
+
+   <!-- <ion-button (click)="guardarfire()">Guardar en Firebase</ion-button>-->
+  <button type="button" class="btn active" data-bs-toggle="button" aria-pressed="true" (click)="guardarfire()">Guardar en Firebase</button>
+  </div>
+</ion-content>
+
+     </div>
+   </ion-app>
+ </ion-content>
+
+

@@ -1,0 +1,80 @@
+
+
+<ion-content [fullscreen]="true"  class="fondo">
+ 
+    <div class="fondooo">
+        
+      <div class="login-section">
+          
+        <div class="text1">
+          <h1>bienvenido!</h1>
+        </div>
+
+        <div class="text2">
+          <p>crear una cuenta  para continuar</p>
+        </div>
+
+        <ion-list class="textos_login">
+            <br>
+          <ion-item>
+            <div class="icon">
+              <ion-icon name="person-circle-outline"></ion-icon>
+            </div>
+
+            <ion-input 
+              label="nombre " 
+              labelPlacement="floating"
+              placeholder="nombre completo..."
+               [(ngModel)]="nombre"></ion-input>
+          </ion-item>
+            <br>
+          <ion-item>
+            <div class="icon">
+              <ion-icon name="person-circle-outline"></ion-icon>
+            </div>
+
+            <ion-input 
+              label="usuario" 
+              labelPlacement="floating"
+              placeholder="usuario..." 
+               [(ngModel)]="usuario"
+              ></ion-input>
+
+          </ion-item>
+            <br>
+          <ion-item>
+            <div class="icon">
+              <ion-icon name="lock-open-outline"></ion-icon>
+            </div>
+
+            <ion-input 
+              label="ingrese password" 
+              labelPlacement="floating" 
+              type="password" 
+              placeholder="password..."
+               [(ngModel)]="password1"></ion-input>
+          </ion-item>
+            <br>
+          <ion-item>
+            <div class="icon">
+              <ion-icon name="lock-open-outline"></ion-icon>
+            </div>
+
+            <ion-input 
+              label="ingrese password" 
+              labelPlacement="floating" 
+              type="password" 
+              placeholder="password 2..."
+               [(ngModel)]="password2"></ion-input>
+          </ion-item>
+      
+        </ion-list>
+      
+        <div ><ion-button color="dark" expand="block"  class="boton_login" (click)="enviarFormulario()">enviar</ion-button></div>
+
+        
+      </div>
+
+    
+  </div>
+</ion-content>

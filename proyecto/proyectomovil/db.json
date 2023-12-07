@@ -1,0 +1,9 @@
+{
+  "cursos": [
+    {
+      "nombrecurso": "bd",
+      "nombreprofesor": "alan",
+      "id": 2
+    }
+  ]
+}

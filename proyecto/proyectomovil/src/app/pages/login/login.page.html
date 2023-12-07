@@ -1,0 +1,52 @@
+<ion-content [fullscreen]="true" class="fondo">
+  
+  <div class="login-section">
+
+    <div class="text1">
+      <h1>bienvenido!</h1>
+    </div>
+
+    <div class="text2">
+      <p>inicia sesión para continuar</p>
+    </div>
+
+    <ion-list class="textos_login">
+
+      <ion-item>
+        <div class="icon">
+          <ion-icon name="person-circle-outline"></ion-icon>
+        </div>
+
+        <ion-input 
+          label="nombre de usuario" 
+          labelPlacement="floating"
+          placeholder="usuario..."
+          [(ngModel)]="correo"
+          ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <div class="icon">
+          <ion-icon name="lock-open-outline"></ion-icon>
+        </div>
+
+        <ion-input 
+          label="ingrese password" 
+          labelPlacement="floating" 
+          type="password" 
+          placeholder="password..."
+          [(ngModel)]="password"
+        ></ion-input>
+      </ion-item>
+  
+    </ion-list>
+    <!--<div class="link1"><A HREF="recuperarcontrasena()">has olvidado tu contaseña</A></div>-->
+
+    <div ><ion-button color="dark" expand="block" (click)="menu()" class="crear()">ingresar</ion-button></div>
+
+   <!--<div class="link2">no tienes cuenta?<A HREF="registrate()">crear cuenta</A></div>-->
+   
+  </div>
+  
+</ion-content>
+

@@ -1,0 +1,36 @@
+<ion-content [fullscreen]="true" class="fondo">
+  
+  <div class="login-section">
+
+    
+
+    <div class="text2">
+      <p>por favor ingrese su usuario para recuperar su contraseña</p>
+    </div>
+
+    <ion-list class="textos_login">
+
+      <ion-item>
+        <div class="icon">
+          <ion-icon name="person-circle-outline"></ion-icon>
+        </div>
+
+        <ion-input
+          label="nombre de usuario"
+          labelPlacement="floating"
+          placeholder="usuario..."
+          [(ngModel)]="nombreDeUsuario"
+        ></ion-input>
+      </ion-item>
+
+  
+    </ion-list>
+    
+
+    <div ><ion-button color="dark" expand="block"  class="boton_login" (click)="recuperarcontrasena2()">enviar</ion-button></div>
+
+    
+  </div>
+  
+</ion-content>
+
